@@ -1,0 +1,53 @@
+#social {
+    /*display: flex makes the container flexbox*/
+    display: flex;
+    /* sets the background colour */
+    background-color: black;
+    /* adjust the row wise or column wise if the flex-direction: column; */
+    justify-content:end;
+    /* align-content:;  align the content vertically or horizontally if flex-direction is set to column*/
+    width: 120px;
+    text-decoration: none;
+    list-style: none;
+    }
+.socimg {
+    width:24px;
+    height:24px;
+}
+
+iframe {
+    width: 100%;
+}
+
+#cont1 {
+    display: flex;
+    background-color: grey;
+    
+    /* width:fit-content; */
+    /* height: fit-content; */
+    justify-content: space-between;
+    flex-direction: column;
+    float:none;
+}
+
+.sizdiv {
+    width: 75px;
+    height: 75px;
+}
+
+#red {
+    background-color: red;
+    
+}
+
+#blue {
+    background-color: blue;
+}
+
+#green {
+    background-color: green;
+}
+
+#voilet {
+    background-color: violet;
+}
