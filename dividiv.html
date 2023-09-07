@@ -7,15 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check divs and spans</title>
     <style type="text/css">
-        .tfl {
+        /* .tfl {
             background-color: grey;
-            display: flex;
             width: fit-content;
-            flex-direction: column;
-            justify-content: center;
+        } */
+        body {
+            background-image: url("./back.jpg");
+            margin: 0px;
+            border: none;
+            padding: 0px;
         }
 
-        .box {
+        #navbar {
+            background-color: yellow;
+            margin: 10px 0px 10px 0px;
+            height: 122px;
+        }
+
+        #list {
+            display: flex;
+            list-style: none;
+            padding-top: 50px;
+            justify-content: space-between;
+        }
+
+        #parent {
+
+            font-size: x-large;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+
+            margin: 40px 50px;
+
+            border: none;
+
+            padding: 30px;
+
+            background-color: rgb(208, 205, 248);
+        }
+
+        .center {
+            justify-content: space-between;
+            display: flex;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        /* .box {
             border-radius: 100%;
             width: 50px;
             height: 50px;
@@ -27,21 +67,21 @@
 
         .sig1 {
             background-color: red;
-            background-image: url("https://www.sportsmockery.com/wp-content/uploads/2018/05/facebook-social-media-fb-logo-square-3b84792233341efb-512x512.png");
-            background-size: contain;
+            background-image: url("./fb.png");
+            background-size: 100%;
         }
 
         .sig2 {
-            background-color: green;
-            background-image: url("https://www.sportsmockery.com/wp-content/uploads/2018/05/facebook-social-media-fb-logo-square-3b84792233341efb-512x512.png");
-            background-size: contain;
+            background-color: lightgreen;
+            background-image: url("./fb.png");
+            background-size: 100%;
         }
 
         .sig3 {
             background-color: yellow;
-            background-image: url("https://www.sportsmockery.com/wp-content/uploads/2018/05/facebook-social-media-fb-logo-square-3b84792233341efb-512x512.png");
-            background-size: contain;
-        }
+            background-image: url("./fb.png");
+            background-size: 100%;
+        } */
 
         /* span {
             font-family: 'Courier New', Courier, monospace;
@@ -76,14 +116,40 @@
         This is a div
     </div>
     <span class="cl2">This is a span</span>-->
-
-    <br />
+    <!-- <br /> -->
     <!--<span class="cl3">This is the second span</span>
     <div>This is the second one</div> -->
-    <div class="tfl">
+    <!-- <div class="tfl">
         <div class="sig1 box"></div>
         <div class="sig2 box"></div>
         <div class="sig3 box"></div>
+    </div> -->
+    <div id="navbar">
+        <ul id="list">
+            <li>THE INSTITUTE</li>
+            <li>ACADEMICS</li>
+            <li>PLACEMENTS</li>
+            <li>TOP CHARTS</li>
+            <li>PLAYLISTS</li>
+            <li>LOG IN</li>
+        </ul>
+    </div>
+    <div id="parent">
+        <img width="48" src="./fb.png" alt="">
+        <hr>
+        <div class="center">
+            <label>
+                <pre>UserName: </pre>
+            </label>
+            <input type="text" placeholder="User Name">
+        </div>
+        <hr>
+        <div class="center">
+            <label>
+                <pre>PassWord: </pre>
+            </label>
+            <input type="password" placeholder="Ur PassWord" name="" id="">
+        </div>
     </div>
 </body>
 
